@@ -240,31 +240,6 @@ const SnakeGame: React.FC = () => {
           <button onClick={resetGame}>Play Again</button>
         </div>
       )}
-
-      {/* Debug output */}
-      <div
-        className="debug"
-        style={{
-          marginTop: "20px",
-          textAlign: "left",
-          fontFamily: "monospace",
-          whiteSpace: "pre",
-          backgroundColor: "#f0f0f0",
-          padding: "10px",
-          borderRadius: "5px",
-        }}
-      >
-        <div>Snake segments (from head to tail):</div>
-        {gameState.snake.map((segment, i) => (
-          <div key={i} style={{ color: segment.color }}>
-            Segment {i}: x={segment.x}, y={segment.y}, color={segment.color}
-          </div>
-        ))}
-        <div style={{ marginTop: "10px" }}>
-          Food: x={gameState.food.x}, y={gameState.food.y}, color=
-          {gameState.food.color}
-        </div>
-      </div>
     </div>
   );
 };
