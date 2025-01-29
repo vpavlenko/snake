@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
-import { Position, Direction, GameState } from "../types";
+import { Position, GameState } from "../types";
 
 const GRID_SIZE = 20;
 const CELL_SIZE = 20;
